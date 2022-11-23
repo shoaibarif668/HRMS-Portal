@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>array digitals</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Font awsome Icon CSS -->
+    <script src="https://kit.fontawesome.com/bc73fb8d91.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="horizontalmenu">
+        <nav class="row gx-0">
+            <div class="headerrow d-flex">
+                <div class="col-lg-3 col-sm-3">
+                    <div class="headerimage">
+                        <img src="./assets/logo.png"></img>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-5">
+                    <div class="headersearch">
+                        <div class="headersearchinner">
+                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            <input type="text" class="form-control shadow-none " id="searchinput" aria-label="Search"
+                                aria-describedby="addon-wrapping" placeholder="Search">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-2 monitornav">
+                    <div class="headertime">
+                        <div class="thirdinnerdiv">
+                            <div class="Timeindiv"> <label>Time In</label> </div>
+                            <div class="switch">
+                                <button type="button" class="btn btn-outline-primary shadow-none"
+                                    data-bs-toggle="button" autocomplete="off"> <label>Check Out</label></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-3 monitornav">
+                    <div class="headermenu">
+                        <ul class="headermenuUl">
+                            <li class="menuiconli">
+                                <img src="./assets/menuicon1.png">
+                            </li>
+                            <li class="menuiconli"><img src="./assets/menuicon2.png"></i>
+                            </li>
+                            <li class="menuiconli"> <img src="./assets/menuicon3.png"> </li>
+                            <li class="menuiconli"> <img src="./assets/menuicon4.png"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 mobilenav">
+                    <div class="topnav">
+                        <a href="" class="topnavactive">
+                            <div id="myLinks">
+                                <ul>
+                                    <li>
+                                        <div class="headertime">
+                                            <div class="thirdinnerdiv">
+                                                <div class="Timeindiv"> <label>Time In</label> </div>
+                                                <div class="switch">
+                                                    <button type="button" class="btn btn-outline-primary shadow-none"
+                                                        data-bs-toggle="button" autocomplete="off"> <label>Check
+                                                            Out</label></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mylinksmenuicon">
+                                        <img src="./assets/menuicon1.png">
+                                    </li>
+                                    <li class="mylinksmenuicon">
+                                        <img src="./assets/menuicon2.png">
+                                    </li>
+                                    <li class="mylinksmenuicon">
+                                        <img src="./assets/menuicon3.png">
+                                    </li>
+                                    <li class="mylinksmenuicon">
+                                        <img src="./assets/menuicon4.png">
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </section>
+
+    <section class="row gx-0 bodymain">
+        <div class="col-lg-1 col-sm-1 mobilesidebarmain">
+            <div class="col-lg-9 col-sm-9">
+                <nav class="main-menu mobilesidenav">
+                    <div class="profileicon">
+                        <div class="profileicontab">
+                            <a href="#">
+                                <img src="./assets/leftbarprofilepic.png">
+                                <span>S. Osama Ali</span>
+                            </a>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar fa-2x" id="faId" aria-hidden="true"></i>
+                                <span class="nav-text">
+                                    Dashboard
+                                </span>
+                            </a>
+
+                        </li>
+                        <li class="has-subnav">
+                            <a href="#">
+                                <i class="fa fa-calendar fa-2x" id="faId" aria-hidden="true"></i>
+                                <span class="nav-text">
+                                    Career Scale
+                                </span>
+                            </a>
+
+                        </li>
+                        <li class="has-subnav">
+                            <a href="#">
+                                <i class="fa fa-calendar fa-2x" id="faId" aria-hidden="true"></i>
+                                <span class="nav-text">
+                                    Attendance
+                                </span>
+                            </a>
+
+                        </li>
+                        <li class="has-subnav">
+                            <a href="#">
+                                <i class="fa fa-calendar fa-2x" id="faId" aria-hidden="true"></i>
+                                <span class="nav-text">
+                                    Wifi Access
+                                </span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar fa-2x" id="faId" aria-hidden="true"></i>
+                                <span class="nav-text">
+                                    Payments
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar fa-2x" id="faId" aria-hidden="true"></i>
+                                <span class="nav-text">
+                                    Policies
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar fa-2x" id="faId" aria-hidden="true"></i>
+                                <span class="nav-text">
+                                    My Financials
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar fa-2x" id="faId" aria-hidden="true"></i>
+                                <span class="nav-text">
+                                    My Team
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar fa-2x" id="faId" aria-hidden="true"></i>
+                                <span class="nav-text">
+                                    Documentation
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobilesidenavbutton">
+                    <div class="mobilesidenavouter">
+                        <button class="btn btn-primary movilesidenavbuttonouterbtn shadow-none">Side Bar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-11 col-sm-10">
+            <div class="middlemenu">
+                <div class=" row">
+                    <div class="upper">
+                        <div class="row">
+                            <div class="col-lg-4 ">
+                                <div class="firstupperdiv">
+                                    <div class="firstupperIn">
+                                        <div class="firstupperwrapper">
+                                            <div class="firstupperinner">
+                                                <div class="upperinfo">
+                                                    <div>
+                                                        <h2>Hi Syed</h2>
+                                                    </div>
+                                                    <div class="Morningheading">
+                                                        <p> Good Morning</p>
+                                                    </div>
+                                                    <div class="Morningschedule">
+                                                        <p>12:00pm </p>
+                                                    </div>
+                                                    <div class="Morningschedule">
+                                                        <p>04-11-2022</p>
+                                                    </div>
+                                                    <div class="upperinfobutton"><button type="button"
+                                                            class="btn btn-light">View Profile</button>
+                                                    </div>
+                                                </div>
+                                                <div class="firstupperimage"><img src="./assets/Girl.png"
+                                                        alt="Girl"></img>
+                                                </div>
+                                            </div>
+                                            <div class="stats">
+                                                <div class="statsinnerdiv">
+                                                    <div class="statscount" id="statscount1id">
+                                                        <div class="statscountimg">
+                                                            <img src="./assets/graphbar1.png" alt="Graph Bar">
+                                                        </div>
+                                                        <div class="statscountnumber">
+                                                            <p>02</p>
+                                                        </div>
+                                                        <div class="statscountinfo">
+                                                            <p>Absent</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="statscount" id="statscount2id">
+                                                        <div class="statscountimg">
+                                                            <img src="./assets/graphbar2.png" alt="Graph Bar">
+                                                        </div>
+                                                        <div class="statscountnumber">
+                                                            <p>18</p>
+                                                        </div>
+                                                        <div class="statscountinfo">
+                                                            <p>Attendance</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="statscount" id="statscount3id">
+                                                        <div class="statscountimg">
+                                                            <img src="./assets/graphbar3.png" alt="Graph Bar">
+                                                        </div>
+                                                        <div class="statscountnumber">
+                                                            <p>06</p>
+                                                        </div>
+                                                        <div class="statscountinfo">
+                                                            <p>Late</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="statscount" id="statscount4id">
+                                                        <div class="statscountbutton">
+                                                            <button type="button"
+                                                                class="btn btn-primary shadow-none">View
+                                                                All</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 ">
+                                <div class="secondupperdiv">
+                                    <div class="Noticesboard row">
+                                        <div class="Noticesboardinner">
+                                            <div class="noticeboardwrapper">
+                                                <div class="mergeheadings">
+                                                    <h5>Notice Board</h5>
+                                                    <img src="./assets/heading lines.png" alt="heading"></img>
+                                                </div>
+                                                <div class="notificationbarouter">
+                                                    <div class="notificationbarinner ">
+                                                        <div class="innerbars owl-carousel">
+                                                            <div class="notificationbar item">
+                                                                <div class="notificationBarprofile">
+                                                                    <img src="./assets/HR.png">
+                                                                </div>
+                                                                <div class="notificationBarmessage">
+                                                                    <h5>Important</h5>
+                                                                    <p>It long is established fact that a reader
+                                                                        will be
+                                                                        distracted
+                                                                        by
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="notificationbar item">
+                                                                <div class="notificationBarprofile"><img
+                                                                        src="./assets/notifcationbar2.png">
+                                                                </div>
+                                                                <div class="notificationBarmessage">
+                                                                    <h5>Important</h5>
+                                                                    <p>It long is established fact that a reader
+                                                                        will be
+                                                                        distracted
+                                                                        by
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="notificationbar item">
+                                                                <div class="notificationBarprofile">
+                                                                    <img src="./assets/HR.png">
+                                                                </div>
+                                                                <div class="notificationBarmessage">
+                                                                    <h5>Important</h5>
+                                                                    <p>It long is established fact that a reader
+                                                                        will be
+                                                                        distracted
+                                                                        by
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="notificationbar item">
+                                                                <div class="notificationBarprofile"><img
+                                                                        src="./assets/notifcationbar2.png">
+                                                                </div>
+                                                                <div class="notificationBarmessage">
+                                                                    <h5>Important</h5>
+                                                                    <p>It long is established fact that a reader
+                                                                        will be
+                                                                        distracted
+                                                                        by
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="myworkspace row">
+                                        <div class="myworkspaceinner">
+                                            <div class="workspacewrapper">
+                                                <div class="mergeheadings">
+                                                    <h5>My Work Space</h5>
+                                                    <img src="./assets/heading lines.png" alt="heading"></img>
+                                                </div>
+                                                <div class="myworkspaceNotificationbarOuter owl-carousel">
+                                                    <div class="myworkspaceNotificationbar item"
+                                                        id="myworkspaceNotificationbar1">
+                                                        <div class="myworkspaceNotificationBarProfile"><img
+                                                                src="./assets/workspace1.png">
+                                                        </div>
+                                                        <div class="myworkspacenotificationIcons">
+                                                            <h5>Trello</h5>
+                                                            <p>Design Unit</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="myworkspaceNotificationbar item"
+                                                        id="myworkspaceNotificationbar2">
+                                                        <div class="myworkspaceNotificationBarProfile"><img
+                                                                src="./assets/workspace2.png"></div>
+                                                        <div class="myworkspacenotificationIcons">
+                                                            <h5>Slack</h5>
+                                                            <p>Design Team</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="myworkspaceNotificationbar item"
+                                                        id="myworkspaceNotificationbar3">
+                                                        <div class="myworkspaceNotificationBarProfile"><img
+                                                                src="./assets/workspace3.png"></div>
+                                                        <div class="myworkspacenotificationIcons">
+                                                            <h5>ThunderBird</h5>
+                                                            <p>All Units</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="myworkspaceNotificationbar item"
+                                                        id="myworkspaceNotificationbar4">
+                                                        <div class="myworkspaceNotificationBarProfile"><img
+                                                                src="./assets/workspace4.png"></div>
+                                                        <div class="myworkspacenotificationIcons">
+                                                            <h5>Skype</h5>
+                                                            <p>All Units</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="thirdupperdiv">
+                                    <div class="Mytickets">
+                                        <div class="myticketsinner">
+                                            <div class="ticketwrapper">
+                                                <div class="mergeheadings">
+                                                    <div class="mergeheadinginner">
+                                                        <h5>My Ticketing</h5>
+                                                        <i class="fa-solid fa-ellipsis"></i>
+                                                    </div>
+                                                    <img src="./assets/heading lines.png" alt="heading"></img>
+                                                </div>
+                                                <div class="listouter ticketlistouter">
+                                                    <div class="listinner ticketlistinner">
+                                                        <div class="listing ticketlisting">
+                                                            <ul>
+                                                                <li><a href="#">Create A Ticket</a></li>
+                                                                <li><a href="#">My All Tickets</a></li>
+                                                                <li><a href="#">My Pending Tickets</a></li>
+                                                                <li><a href="#">My completed Tickets</a></li>
+                                                                <li><a href="#">Department Tickets</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="lower">
+                        <div class="row">
+
+                            <div class="col-lg-3">
+
+                                <div class="firstlowerdiv">
+                                    <div class="Generalqueue">
+                                        <div class="Generalqueueinner">
+                                            <div class="Generalwrapper">
+                                                <div class="mergeheadings">
+                                                    <div class="mergeheadinginner">
+                                                        <h5>General Queries</h5>
+                                                        <i class="fa-solid fa-ellipsis"></i>
+                                                    </div>
+                                                    <img src="./assets/heading lines.png" alt="heading"></img>
+                                                </div>
+                                                <div class="listouter generallistouter">
+                                                    <div class="listinner">
+                                                        <div class="listing generallisting">
+                                                            <ul>
+                                                                <li><a href="#">Feedback Form </a></li>
+                                                                <li><a href="#">Leave Form</a></li>
+                                                                <li><a href="#">Reimbursement Form</a></li>
+                                                                <li><a href="#">Pending Joining Form</a></li>
+                                                                <li><a href="#">Grievances Form</a></li>
+                                                                <li><a href="#">Service Request Form</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="secondlowerdiv ">
+                                    <div class="secondlowerouter">
+                                        <div class="secondlowerinner">
+                                            <div class="profilewrapper">
+                                                <div class="profilebackground"></div>
+                                                <div class="profileouterdiv">
+                                                    <div class="secondlowerprofileicon">
+                                                        <img src="./assets/lowerseconddivprofilepic.png">
+                                                    </div>
+                                                    <div class="profileinfo">
+                                                        <h5>S. Osama Ali</h5>
+                                                        <p>Sr. UI/UX Designer</p>
+                                                        <button type="button" class="btn btn-primary shadow-none">
+
+                                                            <i class="fa-solid fa-mug-hot fa-1x" id="faId"
+                                                                aria-hidden="true"></i>
+                                                            Mark Break</button>
+                                                    </div>
+                                                </div>
+                                                <div class="profileschedulemain">
+                                                    <div class="profileschedulemainouter">
+                                                        <div class="profilescheduleinner">
+                                                            <ul>
+                                                                <li><a href="#">
+                                                                        <div class=" profileschedulemenu">
+                                                                            <div class="profileschedulemenuicon"><i
+                                                                                    class="fa-regular fa-clock fa-1x"></i>
+                                                                            </div>
+                                                                            <div class="profileschedulemenutime">
+                                                                                <div class="profileschedulemenushift">
+                                                                                    Shift
+                                                                                </div>
+                                                                                <div class="profileschedulemenuevening">
+                                                                                    Evening
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a></li>
+                                                                <li><a href="#">
+                                                                        <div class="d-flex">
+                                                                            <div class="profileschedulemenuicon"><i
+                                                                                    class="fa-regular fa-credit-card fa-1x"></i>
+                                                                            </div>
+                                                                            <div class="profileschedulemenutime">
+                                                                                <div class="profileschedulemenushift">
+                                                                                    Employee
+                                                                                    ID</div>
+                                                                                <div class="profileschedulemenuevening">
+                                                                                    15333
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a></li>
+                                                                <li><a href="#">
+                                                                        <div class="d-flex">
+                                                                            <div class="profileschedulemenuicon"><i
+                                                                                    class="fa-regular fa-calendar-days fa-1x"></i>
+                                                                            </div>
+                                                                            <div class="profileschedulemenutime">
+                                                                                <div class="profileschedulemenushift">
+                                                                                    Date of
+                                                                                    Joining</div>
+                                                                                <div class="profileschedulemenuevening">
+                                                                                    04-02-2022</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a></li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="thirdlowerdiv ">
+                                    <div class="timetrackingoutter">
+                                        <div class="timetrackinginner">
+                                            <div class="timetrackingwrapper">
+                                                <div class="timetrackingoutterdiv">
+                                                    <div class="timetrackingdiv">
+                                                        <div class="mergeheadings">
+                                                            <h5>My Time Tracking</h5>
+                                                        </div>
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-secondary dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                Weekly Hrs
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Action</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Another
+                                                                        action</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                    <img src="./assets/heading lines.png" alt="heading"></img>
+                                                </div>
+                                                <div id="chartContainer">
+
+                                                </div>
+                                                <div class="timetrackingmain">
+                                                    <div class="timetrackingouter">
+                                                        <div class="weeklyreport">
+                                                            <p class="p1">Weekly Time Report</p>
+                                                            <p class="p2">Nov 07 - Nov 11 (4 days left)</p>
+                                                        </div>
+                                                        <div class="timetrackingtime">
+                                                            <h5>
+                                                                0h 0m 0s
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="fourthlowerdiv ">
+                                    <div class="Employee">
+                                        <div class="Employeeouter">
+                                            <div class="Employeeinner">
+                                                <div class="Employeewrapper">
+                                                    <div class="mergeheadings">
+                                                        <div class="mergeheadinginner">
+                                                            <h5>Employees</h5>
+                                                            <i class="fa-solid fa-ellipsis"></i>
+                                                        </div>
+                                                        <img src="./assets/heading lines.png" alt="heading"></img>
+                                                    </div>
+                                                    <div class="btn-group" id="buttonGroupLfourdiv" role="group"
+                                                        aria-label="Basic example">
+                                                        <button type="button" class="btn btn-primary">My
+                                                            Team</button>
+                                                        <button type="button" class="btn btn-primary">All
+                                                            Users</button>
+                                                    </div>
+                                                    <div class="employeelistouter">
+                                                        <div class="employeelistinner">
+                                                            <div class="employeelisting">
+                                                                <ul>
+                                                                    <li>
+                                                                        <div class="employeeprofilestatus">
+                                                                            <div class="employeeprofileinner">
+                                                                                <div class="employeeprofilepicture">
+                                                                                    <img
+                                                                                        src="./assets/employeediv1profileicon.png">
+                                                                                </div>
+                                                                                <div>
+                                                                                    <div class="employenamediv">
+                                                                                        <p>Hassan</p>
+                                                                                    </div>
+                                                                                    <div>
+                                                                                        online status
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="employeeprofilestatus">
+                                                                            <div class="employeeprofileinner">
+                                                                                <div class="employeeprofilepicture">
+                                                                                    <img
+                                                                                        src="./assets/employeediv2profileicon.png">
+                                                                                </div>
+                                                                                <div>
+                                                                                    <div class="employenamediv">
+                                                                                        <p>Hassan Jawad</p>
+                                                                                    </div>
+                                                                                    <div>
+                                                                                        online status
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="employeeprofilestatus">
+                                                                            <div class="employeeprofileinner">
+                                                                                <div class="employeeprofilepicture">
+                                                                                    <img
+                                                                                        src="./assets/employeediv3profileicon.png">
+                                                                                </div>
+                                                                                <div>
+                                                                                    <div class="employenamediv">
+                                                                                        <p>Rehan</p>
+                                                                                    </div>
+                                                                                    <div>
+                                                                                        online status
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="employeeprofilestatus">
+                                                                            <div class="employeeprofileinner">
+                                                                                <div class="employeeprofilepicture">
+                                                                                    <img
+                                                                                        src="./assets/employeediv4profileicon.png">
+                                                                                </div>
+                                                                                <div>
+                                                                                    <div class="employenamediv">
+                                                                                        <P>Mehwish</P>
+                                                                                    </div>
+                                                                                    <div>
+                                                                                        online status
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row gx-0 footerow">
+        <nav class="footerouter">
+            <div class="footerinner">
+                <div class="footerwrapper">
+                    <div class="col-8">
+                        <div class="footerstart">
+                            <div class="footerfirstdiv">Copyright ©</div>
+                            <div class="footerseconddiv">arraydigitals</div>
+                            <div class="footerthirddiv">2010-2022. All rights reserved.</div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="footerend">
+                            <div class="footerfourthdiv">Design By :</div>
+                            <div class="footerfifthdiv">arraydigitals</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="./scripting/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+    <script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-cartesian.min.js"></script>
+
+    <script>
+        function myFunction() {
+            var sidebardivemenuicons = document.getElementById("myLinks");
+            if (sidebardivemenuicons.style.display === "block") {
+                sidebardivemenuicons.style.display = "none";
+            } else {
+                sidebardivemenuicons.style.display = "block";
+                sidebardivemenuicons.style.position = "absolute";
+                sidebardivemenuicons.style.zIndex = "1000";
+                sidebardivemenuicons.style.top = "50px";
+                sidebardivemenuicons.style.right = "10px";
+                sidebardivemenuicons.style.background = "white"
+                sidebardivemenuicons.style.width = "50%"
+
+            }
+        }
+
+        function buttonpositionchange() {
+            let sidebarbutton = document.getElementsByClassName('.movilesidenavbuttonouterbtn');
+            sidebarbutton.style.left = "2%"
+        }
+
+        $('.innerbars').owlCarousel({
+            loop: false,
+            margin: 20,
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1200: {
+                    items: 1
+                },
+                1400:{
+                    items:2
+                }
+            }
+        })
+        $('.myworkspaceNotificationbarOuter').owlCarousel({
+            loop: false,
+            margin: 0,
+            responsive: {
+                0: {
+                    items: 3
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                },
+                1400: {
+                    items: 4
+                }
+            }
+        })
+
+    </script>
+    <script>
+
+
+
+
+        var data = [
+            { x: "Mon", value: 10},
+            { x: "Tue", value: 0 },
+            { x: "Wed", value: 18 },
+            { x: "Thu", value: 17},
+            { x: "Fri", value: 15 }
+        ];
+
+        // create a chart
+        chart = anychart.line();
+
+        // create a spline series and set the data
+        var series = chart.spline(data);
+
+        // set the container id
+        chart.container("chartContainer");
+
+        // initiate drawing the chart
+        chart.draw();
+
+    </script>
+
+
+
+</body>
+
+</html>
